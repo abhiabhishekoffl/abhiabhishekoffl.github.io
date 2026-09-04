@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Projects - Abhishek Kumar</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Projects - Abhishek Kumar | Aspiring Cloud & DevOps Engineer</title>
+  <meta content="Explore Cloud and Infrastructure projects by Abhishek Kumar (MCA @2027, OCI Certified), including Multi-AZ VPC deployment, S3 Static Web Hosting, and IaC Terraform implementations." name="description">
+  <meta content="Cloud Projects, AWS Projects, VPC Architecture, S3 Hosting, Terraform, Auto Scaling, Load Balancer, DevOps Projects, OCI" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -26,64 +26,214 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS Files -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/badges.css" rel="stylesheet">
+
+  <!-- Theme Handler Script -->
+  <script src="assets/js/theme.js"></script>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex justify-content-between align-items-center px-lg-5">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">abhishek kumar</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <div class="logo">
+        <a href="index.html">
+          Abhishek Kumar
+          <span class="badge-aws"><i class="bi bi-mortarboard-fill me-1"></i>MCA @2027 | OCI Certified</span>
+        </a>
+      </div>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a class="active" href="portfolio.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      <div class="d-flex align-items-center gap-2">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
 
-      <div class="header-social-links">
-        <a href="https://github.com/abhiabhishekoffl/" class="github"><i class="bi bi-github"></i></i></a>
-        <a href="https://linkedin.com/in/abhiabhishekoffl/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-        <a href="https://www.instagram.com/abhiabhishek_offl/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+
+        <div class="header-social-links d-none d-md-flex">
+          <a href="https://github.com/abhiabhishekoffl" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com/in/abhiabhishekoffl" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/abhiabhishek_offl/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="mailto:abhishek522580@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+        </div>
       </div>
 
     </div>
-
   </header><!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
+      <div class="container px-lg-5" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Projects</h2>
-          <p>Following are some projects developed by me while BCA.</p>
+          <h2>Cloud & Infrastructure Projects</h2>
+          <p>Practical implementations demonstrating cloud architecture, VPC setup, static website hosting, and infrastructure automation.</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Web</li>
-              <li data-filter=".filter-web">Other</li>
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-cloud">AWS Cloud Architecture</li>
+              <li data-filter=".filter-devops">DevOps & IaC</li>
+              <li data-filter=".filter-web">Web & Applications</li>
             </ul>
           </div>
         </div>
+
+        <div class="row portfolio-container g-4" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Project 1: S3 Static Website Hosting -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-cloud">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon-box">
+                  <i class="bi bi-cloud-arrow-up-fill"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/abhiabhishekoffl" target="_blank" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge badge-blue">AWS S3 & Cloud Hosting</span>
+                <h3 class="project-title">Hosting a Static Website on AWS using S3</h3>
+                <p class="project-desc">Configured and deployed a high-performing static website on Amazon Web Services (AWS) using S3 bucket static website hosting features.</p>
+                <ul class="project-bullets">
+                  <li>Configured an Amazon S3 bucket to host static website files (HTML, CSS, JS).</li>
+                  <li>Managed bucket policies and permissions (JSON) to grant public read access safely.</li>
+                  <li>Enabled static website hosting in S3 with custom error and index document handling.</li>
+                  <li>Ensured low cost, high uptime, and global scalability for static assets.</li>
+                </ul>
+              </div>
+              <div class="project-footer">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tech-badge">AWS S3</span>
+                  <span class="tech-badge">IAM Policies</span>
+                  <span class="tech-badge">Static Web Hosting</span>
+                  <span class="tech-badge">AWS CLI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Multi-AZ Production VPC -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-cloud">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon-box">
+                  <i class="bi bi-diagram-3-fill text-cyan"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/abhiabhishekoffl" target="_blank" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge badge-cyan">Multi-AZ Architecture</span>
+                <h3 class="project-title">Web Application Architecture for Production Environment</h3>
+                <p class="project-desc">Designed a 2-Tier VPC production infrastructure architecture distributed across two Availability Zones for fault tolerance and auto scaling.</p>
+                <ul class="project-bullets">
+                  <li>Configured Virtual Private Cloud (VPC) with public subnets and private subnets across 2 AZs.</li>
+                  <li>Provisioned NAT Gateways and Application Load Balancer (ALB) nodes in public subnets.</li>
+                  <li>Launched web servers in isolated private subnets attached to Auto Scaling Groups (ASG).</li>
+                  <li>Enabled secure outbound internet access for private subnet servers via NAT Gateways.</li>
+                </ul>
+              </div>
+              <div class="project-footer">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tech-badge">AWS VPC</span>
+                  <span class="tech-badge">NAT Gateway</span>
+                  <span class="tech-badge">ALB</span>
+                  <span class="tech-badge">Auto Scaling</span>
+                  <span class="tech-badge">EC2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Terraform IaC Automation -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-devops">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon-box">
+                  <i class="bi bi-layers-fill text-purple"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/abhiabhishekoffl" target="_blank" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge badge-purple">Infrastructure as Code</span>
+                <h3 class="project-title">AWS Infrastructure Automation with Terraform</h3>
+                <p class="project-desc">Created declarative Terraform scripts to automate the provisioning and lifecycle management of AWS cloud resources.</p>
+                <ul class="project-bullets">
+                  <li>Wrote modular HashiCorp Configuration Language (HCL) scripts for EC2 and S3 resources.</li>
+                  <li>Defined Security Groups, ingress/egress rules, and key pairs automatically.</li>
+                  <li>Tested Terraform plan, apply, and destroy workflows for zero manual GUI configuration.</li>
+                </ul>
+              </div>
+              <div class="project-footer">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tech-badge">Terraform</span>
+                  <span class="tech-badge">HCL</span>
+                  <span class="tech-badge">AWS Provider</span>
+                  <span class="tech-badge">IaC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Cloud Portfolio Web App -->
+          <div class="col-lg-6 col-md-12 portfolio-item filter-web">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon-box">
+                  <i class="bi bi-code-square text-success"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/abhiabhishekoffl/abhiabhishekoffl.github.io" target="_blank" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                  <a href="index.html" title="Live Site"><i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge badge-green">Cloud Portfolio & CI/CD</span>
+                <h3 class="project-title">Cloud Engineer Personal Portfolio Site</h3>
+                <p class="project-desc">Designed, developed, and deployed a modern responsive portfolio website hosted on GitHub Pages for showcasing Cloud & DevOps skills.</p>
+                <ul class="project-bullets">
+                  <li>Built with clean HTML5, custom dual-theme CSS, and Vanilla JavaScript.</li>
+                  <li>Integrated EmailJS for client-side form submissions without backend server overhead.</li>
+                  <li>Automated deployment pipeline via GitHub Pages git workflow.</li>
+                </ul>
+              </div>
+              <div class="project-footer">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">GitHub Pages</span>
+                  <span class="tech-badge">EmailJS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -91,17 +241,18 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Abhishek Kumar</span></strong>. All Rights Reserved
+    <div class="container text-center">
+      <div class="mb-2">
+        <strong>Abhishek Kumar</strong> &bull; Aspiring Cloud & DevOps Engineer
       </div>
-
+      <div class="copyright">
+        &copy; Copyright <strong>Abhishek Kumar</strong>. All Rights Reserved.
+      </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -111,7 +262,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
