@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -70,30 +70,47 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     let navbar = select('#navbar')
+    let header = select('#header')
     if (navbar) {
       navbar.classList.toggle('navbar-mobile')
-      this.classList.toggle('bi-list')
-      this.classList.toggle('bi-x')
+      if (header) {
+        header.classList.toggle('mobile-nav-active')
+      }
+      document.body.classList.toggle('mobile-nav-active')
+      let toggleIcon = select('.mobile-nav-toggle')
+      if (toggleIcon) {
+        toggleIcon.classList.toggle('bi-list')
+        toggleIcon.classList.toggle('bi-x')
+      }
     }
   })
 
   /**
-   * Mobile nav dropdowns activate
+   * Close mobile nav on link click
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar-mobile a', function (e) {
     let navbar = select('#navbar')
+    let header = select('#header')
+    let toggleIcon = select('.mobile-nav-toggle')
     if (navbar && navbar.classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
+      navbar.classList.remove('navbar-mobile')
+      if (header) {
+        header.classList.remove('mobile-nav-active')
+      }
+      document.body.classList.remove('mobile-nav-active')
+      if (toggleIcon) {
+        toggleIcon.classList.add('bi-list')
+        toggleIcon.classList.remove('bi-x')
+      }
     }
   }, true)
 
   /**
    * Scroll with offset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -147,9 +164,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -157,7 +174,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           if (typeof AOS !== 'undefined') {
             AOS.refresh()
           }
